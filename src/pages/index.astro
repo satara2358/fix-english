@@ -1,0 +1,20 @@
+---
+import ButtonSubmit from '../components/ButtonSubmit.svelte';
+import Layout from '../layouts/Layout.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="container max-w-lg m-auto flex flex-col">
+		<header>
+			<h1 class="text-3xl font-bold">Fix ENglish<span class="text-gradient">Astro</span></h1>
+		</header>
+				
+		<label class="text-gray-700" for="name">
+			<textarea id="result" class="flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"  placeholder="Enter your comment" name="comment" rows="5" cols="40">
+			</textarea>
+		</label>
+		<ButtonSubmit client:visible/>
+	</main>
+</Layout>
+
