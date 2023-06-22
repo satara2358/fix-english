@@ -1,5 +1,6 @@
 # Astro Starter Kit: Basics
 
+https://fix-english.vercel.app/ 
 ```
 npm create astro@latest -- --template basics
 ```
